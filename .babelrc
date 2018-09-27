@@ -1,0 +1,16 @@
+{
+  "presets": ["env", "react"],
+  "env": {
+    "server": {
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "preprocessCss": "./loaders/sass-loader.js",
+            "generateScopedName": "./loaders/scope-name.js",
+            "extensions": [".scss", ".css"]
+          }
+        ]
+      ]
+    }
+  }
+}
